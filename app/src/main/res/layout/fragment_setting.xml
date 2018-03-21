@@ -3,7 +3,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.techeasesol.chatapp.Fragments.SettingFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#f3f3f3">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/person"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
 
 
+        <TextView
+            android:id="@+id/displayname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display Name"
+            android:layout_gravity="center"
+            android:textSize="30sp"/>
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi there,"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
 
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:text="change image"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_marginTop="180dp"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#f43607"
+            android:text="change Status"
+            android:textColor="#FFF"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
 </FrameLayout>

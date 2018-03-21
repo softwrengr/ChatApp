@@ -67,7 +67,7 @@ public class LoginFragment extends Fragment {
                         getFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment).commit();
                         }
                         else {
-                            Toast.makeText(getActivity(), "Error", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity(), "you got some error", Toast.LENGTH_SHORT).show();
                         }
                     }
                     });

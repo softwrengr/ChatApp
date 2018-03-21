@@ -72,6 +72,14 @@ public class HomeFragment extends Fragment   {
             Fragment fragment = new LoginFragment();
             getFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment).addToBackStack("").commit();
         }
+        else if(item.getItemId() == R.id.setting){
+            Fragment setting = new SettingFragment();
+            getFragmentManager().beginTransaction().replace(R.id.fragment_container, setting).addToBackStack("").commit();
+        }
+        else if(item.getItemId() == R.id.create_acc){
+            Fragment registration = new RegisterationFragment();
+            getFragmentManager().beginTransaction().replace(R.id.fragment_container, registration).addToBackStack("").commit();
+        }
         return super.onOptionsItemSelected(item);
     }
     public void sendToRegistration(){
