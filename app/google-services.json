@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "220714144090",
+    "firebase_url": "https://chatapp-d194f.firebaseio.com",
+    "project_id": "chatapp-d194f",
+    "storage_bucket": "chatapp-d194f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220714144090:android:633bc57c6e63ddf5",
+        "android_client_info": {
+          "package_name": "com.example.techeasesol.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220714144090-1qslu067u12lhjr6trnqjmal6oge7u2q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.techeasesol.chatapp",
+            "certificate_hash": "74b599f726ffedb6ddad277791b93a4374396d41"
+          }
+        },
+        {
+          "client_id": "220714144090-ko7u2r2ebisnpccd0am7f49p5m3vid0h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGVPg14u8MHJsWboxWwjNwykH9m4dJtmc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220714144090-ko7u2r2ebisnpccd0am7f49p5m3vid0h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
