@@ -21,6 +21,7 @@ public class FriendsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_friends, container, false);
         Button btn  = new Button(getActivity());
         EditText editText = new EditText(getActivity());
+        String myStr = "Abxc";
         return view;
     }
 }
