@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.techeasesol.chatapp.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -19,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 
-public class SettingFragment extends Fragment {
+public class  SettingFragment extends Fragment {
     DatabaseReference mDataReference;
     FirebaseUser current_user;
     TextView displayName, status;
@@ -37,7 +38,7 @@ public class SettingFragment extends Fragment {
         mDataReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String name = dataSnapshot.child("name").getValue().toString();
+                 String name = dataSnapshot.child("name").getValue().toString();
                 String user_status = dataSnapshot.child("status").getValue().toString();
                // String image = dataSnapshot.child("image").getValue().toString();
                // String thumb_image = dataSnapshot.child("thum_image").getValue().toString();

@@ -1,6 +1,7 @@
 package com.example.techeasesol.chatapp.Fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -78,6 +79,10 @@ public class HomeFragment extends Fragment   {
         }
         else if(item.getItemId() == R.id.create_acc){
             Fragment registration = new RegisterationFragment();
+            getFragmentManager().beginTransaction().replace(R.id.fragment_container, registration).addToBackStack("").commit();
+        }
+        else if(item.getItemId() == R.id.all_users){
+            Fragment registration = new UsersFragment();
             getFragmentManager().beginTransaction().replace(R.id.fragment_container, registration).addToBackStack("").commit();
         }
         return super.onOptionsItemSelected(item);
